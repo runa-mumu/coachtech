@@ -3,7 +3,7 @@
     <h2>Home</h2>
     <div v-for="(data,index) in list" :key="index">
       <p>{{data.name}}</p>
-      <button @click="transition()">還移</button>
+      <button @click="transition(data.id)">還移</button>
     </div>
   </div>
 </template>
