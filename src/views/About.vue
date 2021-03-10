@@ -1,5 +1,17 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h2>About</h2>
+    <button @click="transition()">還移</button>
   </div>
 </template>
+
+<script>
+export default {
+  methods: {
+    transition(){
+      this.$router.push({ name: "Home"});
+    }
+  },
+};
+</script>
+
