@@ -5,8 +5,8 @@
 <script>
 export default {
   async created() {
-    await this.$store.dispatch("changeDataAction");
-    console.log(this.$store.state.list.data);
+    await this.$store.dispatch("changeDataAction1");
+    await this.$store.dispatch("changeDataAction2");
   },
 };
 </script>
